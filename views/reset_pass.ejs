@@ -1,0 +1,22 @@
+<% layout('layouts/boilerplate')%>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4 mt-0">
+                <div class="card shadow">
+                    <img src="BG2.jpg" alt="" class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">Please Send Your Registered Email</h5>
+                        <form action="/reset-password" method="POST" class="validated-form" novalidate>
+                            <div class="mb-3">
+                                <label class="form-label" for="email">Email</label>
+                                <input class="form-control" type="text" id="email" name="email" autofocus required>
+                            </div>
+
+                            <button class="btn btn-success btn-block">Request</button>
+                        </form>
+                        <p>Not a Member? <a href="/" style="text-decoration: none;">Join Us</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

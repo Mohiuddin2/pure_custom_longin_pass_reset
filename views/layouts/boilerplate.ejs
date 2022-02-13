@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.0/mapbox-gl.js"></script>
+    <title>Flink</title>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+    <style>
+        body {
+            background-image: url('/BG2.jpg');
+            background-size: cover;
+            background-image: no-repeat scroll center scroll;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column vh-100">
+    <%- include('../partials/navbar.ejs') %>
+
+        <main class="container mt-0 pt-0">
+            <%- include('../partials/flash.ejs')%>
+                <%- body %>
+        </main>
+
+
+        <%- include('../partials/footer') %>
+            <!-- <script src="/bootstrap.bundle.min.js"></script> -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+                crossorigin="anonymous"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+            <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
+            <script>
+                let password = document.getElementById("password");
+                let confirm_password = document.getElementById("confirm_password");
+
+                function validatePassword() {
+                    if (password.value != confirm_password.value) {
+                        confirm_password.setCustomValidity("Passwords Don't Match");
+                        console.log("Clicked");
+                    } else {
+                        confirm_password.setCustomValidity('');
+                    }
+                }
+
+                password.onchange = validatePassword;
+                confirm_password.onkeyup = validatePassword;
+            </script>
+</body>
+
+</html>

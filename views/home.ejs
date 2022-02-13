@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase-auth.js"></script>
+    <!-- <script src="protect.js"></script> -->
+    <title>Flink</title>
+
+
+    <style>
+        body {
+            background-image: url('images/BG2.jpg');
+            background-size: cover;
+            background-image: no-repeat scroll center scroll;
+            height: 100vh;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .container1 {
+            background-color: aqua;
+            height: 92%;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body background="images/BG2.jpg" topmargin="0" leftmargin="0">
+        <button type="button"
+            style="background-color: #3c9640e5; border: none; color: white; border-radius: 5px;; position: absolute; right: 25px; top: 20px; padding: 12px 32px"
+            onclick="logout()">Logout</button>
+        <div class="container1">
+
+
+        </div>
+
+
+
+
+
+
+
+        <div>
+            <footer class="footer bg-dark py-3 mt-auto">
+                <div class="container">
+                    <span class="text-muted">&copy; Secure Login-System-2022. Developed By <a
+                            style="text-decoration:none;" href="mailto:mohibdrs@gmail.com" target="blank"
+                            rel="noreferrer">Mohi007</a> </span>
+                </div>
+            </footer>
+        </div>
+        <script>
+
+            function logout() {
+                localStorage.clear()
+                window.location.href = "/login"
+            }
+        </script>
+    </body>
+
+</html>

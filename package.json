@@ -1,0 +1,35 @@
+{
+  "name": "login_system",
+  "version": "1.0.0",
+  "description": "Only private login System",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Mohi007",
+  "license": "ISC",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "https://github.com/Mohiuddin2/privatelogin#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^12.0.4",
+    "ejs": "^3.1.6",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-session": "^1.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^6.1.6",
+    "nodemailer": "^6.7.2"
+  }
+}
