@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Mohiuddin2/privatelogin#readme",
   "dependencies": {
+    "axios": "^0.26.0",
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
     "connect-mongo": "^4.6.0",
@@ -28,8 +29,11 @@
     "express-mongo-sanitize": "^2.2.0",
     "express-session": "^1.17.2",
     "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
     "method-override": "^3.0.0",
     "mongoose": "^6.1.6",
-    "nodemailer": "^6.7.2"
+    "nodemailer": "^6.7.2",
+    "otp-generator": "^4.0.0",
+    "speakeasy": "^2.0.0"
   }
 }

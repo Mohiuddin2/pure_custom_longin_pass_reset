@@ -25,11 +25,16 @@ const UserSchema = new mongoose.Schema({
   },
   resetPasswordToken: String,
   resetPasswordExpire: Date,
+  otp: {
+    type: String,
+    require: true
+  },
+
   createAt: {
     type: Date,
     default: Date.now,
   },
-});
+},{timestamps: true});
 // Encrypt Password using bcrypt
 UserSchema.pre("save", async function (next) {
   if (!this.isModified("password")) {

@@ -1,0 +1,22 @@
+<% layout('layouts/boilerplate')%>
+    <div class="container d-flex justify-content-center align-items-center mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4 mt-0">
+                <div class="card shadow">
+                    <img src="/BG2.jpg" alt="" class="card-img-top" />
+                    <div class="card-body">
+                        <h5 class="card-title">Please Enter Your OTP</h5>
+                        <form action="/verify_otp/<%= name %>" method="POST" class="validated-form">
+                            <div class="mb-3">
+                                <label class="form-label" for="token">OTP</label>
+                                <input class="form-control" type="text" id="token" name="token" autofocus required>
+                            </div>
+
+                            <button class="btn btn-success btn-block">Request</button>
+                        </form>
+         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

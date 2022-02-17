@@ -10,11 +10,11 @@ const ejsMate = require("ejs-mate");
 const dotenv = require("dotenv");
 const session = require("express-session");
 const flash = require("connect-flash");
-// const ExpressError = require("./utility/ExpressError");
+
 
 const cookieParser = require("cookie-parser");
 
-// const helmet = require("helmet");
+
 
 const mongoSanitize = require("express-mongo-sanitize");
 const errorHandler = require("./middleware/errors");
@@ -59,14 +59,14 @@ app.all("*", (req, res, next) => {
   next(new ExpressError("Page Not Found", 404));
 });
 
-// default error handler..
+// // default error handler..
 app.use((err, req, res, next) => {
   const { statusCode = 500 } = err;
   if (!err.message) err.message = "Saomething Went Wrong";
   res.status(statusCode).render("error", { err });
 });
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 // const port = 5000;
 
 app.listen(port, () => {

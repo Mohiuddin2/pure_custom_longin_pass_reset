@@ -5,16 +5,15 @@
                 <div class="card shadow">
                     <img src="BG2.jpg" alt="" class="card-img-top" />
                     <div class="card-body">
-                        <h5 class="card-title">Register</h5>
+                        <h5 class="card-title">Binary.co Assignment Project</h5>
+                        <h5 class="card-title"> Register</h5>
                         <form action="/register" method="POST">
-                          <div class="mb-3">
-                                <label class="form-label" for="name">Name</label>
-                                <input class="form-control" type="text" id="name" name="name" autofocus required>
+                            <div class="mb-3">
+                                <label class="form-label" for="name">User Name</label>
+                                <input class="form-control" type="text" id="name" name="name" autofocus required
+                                    pattern="^\S+$">
                             </div>
-                            <!-- <div class="mb-3">
-                                <label class="form-label" for="email">Email</label>
-                                <input class="form-control" type="email" id="email" name="email" required>
-                            </div> -->
+
                             <div>
                                 <label for="email" class="form-label">Email</label>
                                 <input type="email" name="email" class="form-control" id="email" required>
@@ -22,9 +21,7 @@
                             <div class="mb-3">
                                 <label class="form-label" for="password">Password</label>
                                 <input class="form-control" type="password" id="password" name="password" required>
-                                <div class="valid-feedback">
-                                    Looks good!
-                                </div>
+
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="">Confirm Password</label>
@@ -40,6 +37,7 @@
                                 </label>
                             </div>
                             <button class="btn btn-success btn-block">Register</button>
+                            <p>Or <a href="./login">Sign In</a></p>
                         </form>
                     </div>
                 </div>
